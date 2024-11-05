@@ -1,0 +1,72 @@
+/* Establece los estilos básicos del cuerpo del documento */
+body {
+    font-family: Arial, sans-serif; /* Fuente uniforme para mejorar la legibilidad */
+    margin: 0; /* Remueve márgenes predeterminados */
+    padding: 0; /* Remueve paddings predeterminados */
+    background: #f4f4f4; /* Color de fondo suave para reducir la fatiga visual */
+    color: #333; /* Color de texto oscuro para un contraste adecuado */
+}
+
+/* Estilos para los elementos de encabezado y pie de página */
+header, footer {
+    background: #333; /* Fondo oscuro para destacar estas áreas */
+    color: white; /* Texto claro para contraste en el fondo oscuro */
+    text-align: center; /* Centra el contenido textual */
+    padding: 10px 0; /* Espacio interior vertical para separar del contenido adyacente */
+}
+
+/* Estilos para las secciones generales de contenido */
+section {
+    padding: 20px; /* Espacio interior para separar el contenido de los bordes */
+    margin: 0 10px; /* Margen horizontal para mantener el contenido centrado */
+}
+
+/* Estilos específicos para los inputs y botones del formulario de tareas */
+#task-form input[type="text"] {
+    width: 75%; /* Anchura relativa para adaptarse al contenedor padre */
+    padding: 10px; /* Padding para hacer el input más accesible */
+}
+
+#task-form button {
+    width: 20%; /* Anchura complementaria al input de texto */
+    padding: 10px; /* Padding para facilitar la interacción */
+    background: #5cb85c; /* Color verde para indicar acción positiva */
+    color: white; /* Texto claro para contraste con el fondo */
+    border: none; /* Sin bordes para un diseño más limpio */
+    cursor: pointer; /* Indica que el elemento es interactuable */
+}
+
+/* Estilos para los ítems de la lista de tareas */
+#task-list li {
+    background: white; /* Fondo claro para diferenciar de la página */
+    padding: 10px; /* Espacio interior para evitar que el texto toque los bordes */
+    border-bottom: 1px solid #ddd; /* Línea divisoria sutil entre ítems */
+    list-style-type: none; /* Remueve los estilos de lista predeterminados */
+}
+
+/* Estilos para tablas de resumen de tareas */
+table {
+    width: 100%; /* La tabla ocupa el ancho completo del contenedor */
+    border-collapse: collapse; /* Los bordes de la tabla colapsan en uno solo */
+}
+
+th, td {
+    border: 1px solid black; /* Bordes definidos para mejorar la legibilidad */
+    padding: 8px; /* Espacio interior para el contenido de las celdas */
+    text-align: left; /* Alineación del texto a la izquierda para coherencia */
+}
+
+/* Estilos para botones de acción como borrar */
+.delete-btn {
+    margin-left: 10px; /* Espacio a la izquierda para separar del texto */
+    color: red; /* Color rojo para indicar acción de eliminación */
+    border: none; /* Sin bordes para mantener la simplicidad */
+    background: none; /* Fondo transparente */
+    cursor: pointer; /* Indica que el elemento es interactuable */
+}
+
+/* Estilos para tareas completadas */
+.completed {
+    text-decoration: line-through; /* Tacha para indicar que la tarea está completa */
+    color: #aaa; /* Color gris para mostrar que no es el foco principal */
+}

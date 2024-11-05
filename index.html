@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Tareas Grupo 6</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Encabezado principal de la página -->
+    <header>
+        <h1>Gestor de Tareas</h1>
+    </header>
+
+    <!-- Sección principal para la adición de tareas -->
+    <section>
+        <form id="task-form">
+            <label for="new-task">Nueva Tarea:</label>
+            <input type="text" id="new-task" name="new-task" placeholder="Añadir nueva tarea" required aria-required="true">
+            <button type="submit">Agregar Tarea</button>
+        </form>
+        <ul id="task-list" aria-label="Lista de tareas"></ul>
+    </section>
+
+    <!-- Sección para resumen de tareas en una tabla -->
+    <section>
+        <h2>Resumen de Tareas</h2>
+        <table id="task-summary">
+            <thead>
+                <tr>
+                    <th>Tarea</th>
+                    <th>Estado</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Las filas se añadirán dinámicamente con JavaScript -->
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Sección para gráficos de tareas completadas -->
+    <section>
+        <h2>Gráfico de Tareas Completadas</h2>
+        <canvas id="taskChart" aria-label="Gráfico de tareas completadas"></canvas>
+    </section>
+
+    <!-- Pie de página con créditos -->
+    <footer>
+        <p>Desarrollado por Grupo de trabajo 6 PSP® Politecnico Grancolombiano</p>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
