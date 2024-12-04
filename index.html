@@ -19,6 +19,8 @@
             <label for="new-task">Nueva Tarea:</label>
             <input type="text" id="new-task" name="new-task" placeholder="Añadir nueva tarea" required aria-required="true">
             <button type="submit">Agregar Tarea</button>
+            <button type="button" onclick="sortTasks()">Ordenar Alfabéticamente</button>
+            <button type="button" onclick="sortByStatus()">Ordenar por Estado</button>
         </form>
         <ul id="task-list" aria-label="Lista de tareas"></ul>
     </section>

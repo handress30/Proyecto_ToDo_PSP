@@ -23,12 +23,12 @@ section {
 
 /* Estilos específicos para los inputs y botones del formulario de tareas */
 #task-form input[type="text"] {
-    width: 75%; /* Anchura relativa para adaptarse al contenedor padre */
+    width: 70%; /* Anchura relativa para adaptarse al contenedor padre */
     padding: 10px; /* Padding para hacer el input más accesible */
+    margin-right: 10px; /* Margen derecho para separar del botón */
 }
 
 #task-form button {
-    width: 20%; /* Anchura complementaria al input de texto */
     padding: 10px; /* Padding para facilitar la interacción */
     background: #5cb85c; /* Color verde para indicar acción positiva */
     color: white; /* Texto claro para contraste con el fondo */
@@ -42,6 +42,28 @@ section {
     padding: 10px; /* Espacio interior para evitar que el texto toque los bordes */
     border-bottom: 1px solid #ddd; /* Línea divisoria sutil entre ítems */
     list-style-type: none; /* Remueve los estilos de lista predeterminados */
+    display: flex; /* Uso de Flexbox para alinear elementos internos */
+    align-items: center; /* Alineación vertical de los elementos */
+}
+
+/* Estilos para botones dentro de la lista (borrar, completar, editar) */
+#task-list button {
+    margin-left: 10px; /* Espacio a la izquierda para separar del texto */
+    background: none; /* Fondo transparente */
+    border: none; /* Sin bordes para mantener la simplicidad */
+    cursor: pointer; /* Indica que el elemento es interactuable */
+}
+
+.delete-btn {
+    color: red; /* Color rojo para indicar acción de eliminación */
+}
+
+.complete-btn {
+    color: green; /* Color verde para indicar completitud */
+}
+
+.edit-btn {
+    color: blue; /* Color azul para indicar edición */
 }
 
 /* Estilos para tablas de resumen de tareas */
@@ -54,15 +76,6 @@ th, td {
     border: 1px solid black; /* Bordes definidos para mejorar la legibilidad */
     padding: 8px; /* Espacio interior para el contenido de las celdas */
     text-align: left; /* Alineación del texto a la izquierda para coherencia */
-}
-
-/* Estilos para botones de acción como borrar */
-.delete-btn {
-    margin-left: 10px; /* Espacio a la izquierda para separar del texto */
-    color: red; /* Color rojo para indicar acción de eliminación */
-    border: none; /* Sin bordes para mantener la simplicidad */
-    background: none; /* Fondo transparente */
-    cursor: pointer; /* Indica que el elemento es interactuable */
 }
 
 /* Estilos para tareas completadas */
